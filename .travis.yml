@@ -19,14 +19,14 @@ script:
   # - docker image prune --all   
   - docker-compose -f docker-compose-build.yaml build --parallel
   - docker tag reverseproxy:latest khoalnn/reverseproxy:v2
-  - docker tag udagram-api-user:latest khoalnn/udagram-api-user:v2
-  - docker tag udagram-api-feed:latest khoalnn/ udagram-api-feed:v2 
+  # - docker tag udagram-api-user:latest khoalnn/udagram-api-user:v2
+  # - docker tag udagram-api-feed:latest khoalnn/ udagram-api-feed:v2 
   - docker tag udagram-frontend:local khoalnn/udagram-frontend:v2
 
 # Tasks to perform after the process is successful. Formatting the Docker username and password as below enables you to programmatically log in without having the password exposed in logs.
 after_success:
   - echo "Lekho@2481990" | docker login -u "lekhoa2481990" --password-stdin
   - docker push khoalnn/reverseproxy:v2
-  - docker push khoalnn/udagram-api-user:v2
-  - docker push khoalnn/udagram-api-feed:v2
+  # - docker push khoalnn/udagram-api-user:v2
+  # - docker push khoalnn/udagram-api-feed:v2
   - docker push khoalnn/udagram-frontend:v2
