@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - image: khoalnn/udagram-api-user
-          name: backend-feed
+          name: backend-user
           imagePullPolicy: Always
           resources:
             requests:

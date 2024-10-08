@@ -8,6 +8,6 @@ data:
   POSTGRES_DB: postgres
   POSTGRES_HOST: postgres-2.cliqrtw9vjbg.us-west-2.rds.amazonaws.com
   NODE_OPTIONS: --openssl-legacy-provider
-  URL: aba3502511869477c8c84f2a94ce0bc3-817320781.us-west-2.elb.amazonaws.com:8100
+  URL: http://aba3502511869477c8c84f2a94ce0bc3-817320781.us-west-2.elb.amazonaws.com:8100
 metadata:
   name: env-config
