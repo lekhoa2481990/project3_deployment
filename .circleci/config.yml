@@ -37,7 +37,7 @@ jobs:
           command: |
             docker tag udagram-api-feed:v8 khoalnn/udagram-api-feed:v8
             docker tag udagram-api-user:v8 khoalnn/udagram-api-user:v8
-            docker tag udagram-frontend:v8 khoalnn/udagram-frontend::v8
+            docker tag udagram-frontend:v8 khoalnn/udagram-frontend:v8
             docker tag udagram-reverseproxy:v8 khoalnn/reverseproxy:v8
 
       - run:
